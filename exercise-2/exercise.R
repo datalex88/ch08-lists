@@ -3,11 +3,20 @@
 ## 1. Create a sequence of numbers from 40 to 50.  Store this into a vector.
 ## Write a loop that prints the numbers in a nice way, for instance like
 ##  "element 1 = 40".
-
+seq_num <- c(40:50)
+j <- 1
+for (i in seq_num) {
+  print(paste0("element ",j," = ",i))
+  j <- j + 1
+}
 
 ## 2. Create another sequence of numbers and store in a vector.
 ## Write a loop that prints the numbers and their squares in a nice way.
+sqr_num <- c(1:10)
 
+for(i in sqr_num) {
+  print(paste0("Square of element ",i," = ",i^2))
+}
 
 ## 3. Store the file names in the current working directory into a vector.
 ## You can get the names using 'list.files()` command (see help for additional information).
@@ -24,6 +33,9 @@
 ## x[3] <- 7
 ## Note: you have to create a vector before you can start assigning values to it.
 ##
+file_names <- c(list.files())
+
+file_length <- for()
 
 
 ## 4. Create a sequence of numbers from 1 to 1000.
