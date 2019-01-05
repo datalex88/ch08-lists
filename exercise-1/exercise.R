@@ -31,15 +31,11 @@ early.meals <- meals[1:2]
 num.items <- sapply(meals,length)
 
 # 9. Write a function that adds pizza to every meal
-breakfast <- c(breakfast,"pizza")
-i = 1
-for(i in meals){
-  meals <- c(meals[i],"pizza")
-}
+meals <- append(meals[[1]],"pizza")
+
 meals
 add.pizza <- function(exsisting.list, item.to.add) {
   exsisting.list <- c(exsisting.list, item.to.add)
-  return(exsisting.list)
 }
 
 # 10. Add pizza to every meal!
