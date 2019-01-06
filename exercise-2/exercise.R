@@ -34,15 +34,29 @@ for(i in sqr_num) {
 ## Note: you have to create a vector before you can start assigning values to it.
 ##
 file_names <- c(list.files())
+file_length <- c()
 
-file_length <- for()
+for(i in file_names) {
+  file_length[i] <- nchar(i)
+}
 
+j <- 1
+for(i in file_length){
+  print(paste0(file_names[j], "  ",i))
+  j <- j + 1
+}
 
 ## 4. Create a sequence of numbers from 1 to 1000.
 ## use a loop to print only these numbers that are multiplies of 99.
 ## Hint: you may want to test if remainder is 0
 ## Hint: '%%' is the remainder operator
+mult_num <- c(1:1000)
 
+for(i in mult_num) {
+  if((99/i) %% 1 == 0) {
+    print(i)
+  }
+}
 
 ## 5. Create a vector of 3 words.  Split the words in this vector into individual characters.
 ## Hint: use 'strsplit()' function.
