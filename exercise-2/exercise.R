@@ -67,3 +67,6 @@ for(i in mult_num) {
 ## a vowel
 ## n consonant
 ## d consonant
+
+word <- c("how", "about","them")
+word_df <- strsplit(word)
